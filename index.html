@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <title>Page Scanner</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid logo-box">
+            <div class="logo"><a href="#"><img src="/logo_page_checker.png" alt=""></a></div>
+            <form action="" class="url-form">
+                <label for=".web-site">Insert URL</label>
+                <input class="url-form-input" type="text" placeholder="www.some-web-site.com"
+                    value="https://www.rockhardpro.com/members-area-2/">
+                    <button type="submit" class="btn-url btn-sm btn-dark">CHECK</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="embed-box col-12 col-lg-6">
+                    <h2 class="text-center">Page preview:</h2>
+                    <div class="embed">
+                        <!-- <embed class="embed-tag" src="" type=""> -->
+                        <iframe class="embed-tag" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="results-box col-12 col-lg-6">
+                    <h2 class="text-center">Results:</h2>
+                    <div class="result-wrapper">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="links-tab" data-bs-toggle="tab" href="#links" role="tab"
+                                    aria-controls="links" aria-selected="true">Links</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="text-tab" data-bs-toggle="tab" href="#text" role="tab"
+                                    aria-controls="profile" aria-selected="false">Text content</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="image-tab" data-bs-toggle="tab" href="#images" role="tab"
+                                    aria-controls="contact" aria-selected="false">Images</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="links" role="tabpanel"
+                                aria-labelledby="links-tab">loading... 1
+                            </div>
+                            <div class="tab-pane fade" id="text" role="tabpanel" aria-labelledby="text-tab">loading... 2
+                            </div>
+                            <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                                loading... 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
